@@ -17,11 +17,133 @@ p {
 .text{background-color: blueviolet;}
 
 .text.description {border: 5px solid yellowgreen;}
-*/
+
 
 p {background-color: red;}
 
 #paragraf{background-color: blue}
 
 .text-description {background-color: green}
+*/
+
+/*
+allt inom body typ typsnitt, färg på text osv. 
+allt som inte fångas upp av tex container eller 
+andra id'n jag har satt. 
+*/
+body {
+    background-color: #f4f4f4;
+    color: #555;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 16px;
+    line-height:1.6em;
+    margin:0;
+}
+
+/*
+WIDTH Ställer in hur mycket av fönstret som allt inom containerklassen ska ta upp. 
+MARGIN ställer in så att det finns en marginal till kanten.
+OVERFLOW kan man använda för att ställa in vad som händer med texten som 
+"blöder över" ifall den är i en ruta eller liknande.
+I det här fallet påverkar det den orangea rutan under rubriken :/ får kolla upp det i videon nogrannare. 
+man gör en punkt och sedan namnet på classen för att styla den.
+man gör # och sedan namnet på element id't för att styla.
+*/
+.container{
+    width:80%; 
+    margin:auto;
+    overflow:hidden;
+}
+/*
+Påverkar allt inom min main header förutom att det där i 
+overflow också påverkar det orangea: 
+Det var för att i html documentet så ligger min main header inom container classen också.  
+*/
+#main-header{
+    background-color: coral;
+    color:#fff;
+}
+
+/*
+Påverkar allt som ligger inom id't NAVBAR, altså länkarna jag lade in som en lista.  
+Delade upp alla enheter i navbar var för sig och påverkar olika delar av den.
+först sätta färger för hela navbar.
+sedan ul (unordered list) de får ingen padding (luften runtom?)
+list style: none tar bort prickarna. men även display: inline gör det, 
+när den ordnar listobjekten så de ligger bredvid varandra.
+*/
+#navbar {
+    background-color:#333;
+    color:#fff;
+}
+
+#navbar ul{
+    padding: 0px;
+    list-style: none;
+}
+
+#navbar li{
+    display:inline;
+}
+
+#navbar a{
+    color:#fff;
+    text-decoration: none;
+    font-size: 18px;
+    padding-right: 15px;
+}
+
+#showcase{
+    background-image:url('../images/showcase.jpg');
+    background-position: center right;
+    min-height: 300px;
+    margin-bottom:30px;
+    text-align: center;
+}
+
+#showcase h1{
+    color:#fff;
+    font-size:50px;
+    line-height: 1.6em;
+    padding-top:30px;
+}
+
+#main{
+    float:left;
+    width: 70%;
+    padding:0 30px;
+    box-sizing: border-box;
+}
+
+#sidebar{
+    float:right;
+    width: 30%;
+    background: #333;
+    color:#fff;
+    padding:10px;
+    box-sizing: border-box;
+}
+
+#main-footer{
+    background: #333;
+    color: #fff;
+    text-align: center;
+    padding: 20px;
+    margin-top: 40px;
+}
+/* "media-query" - condition: if its a max width of 600px.
+any styles we put in here is only gonna be in effect if 
+its under 600px(fönstret antar jag)*/
+@media(max-width:600px){
+    #main{
+        width:100%;
+        float:none;
+    }
+    #sidebar{
+        width:100%;
+        float:none;
+    }
+}
+ 
+
 

@@ -1,22 +1,61 @@
+<!--Man skriver utropstecken och sedan enter för att få upp basen till HTML5 koden-->
 <!DOCTYPE html> 
 <html lang="en">
-<head>
+<head> <!--Här ligger koden för webbläsaren,
+man kan tex ändra texten som ska stå i fliken mellan <title></title> -->
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="styles.css">
-    <title>Document</title>
+    <title>Sötnosar</title>
+    <!-- här är länk till css filen där all design ska ligga-->
+    <link rel="stylesheet" href="styles.css"> 
 </head>
-
-<!-- kommentar -->
-
+<!-- body ska innehålla det som visas för användaren i webbläsarfönstret. -->
 <body>
-<h1>Titel</h1>
-<p id="paragraf" class="text-description">Paragraf</p>
-<p class="text-description">Paragraf</p>
-<p class="text">Paragraf</p>
-<p class="text">Paragraf</p>
-<a href="https://google.com">gå till google</a>
+    <header id="main-header"> 
+    <!-- id har högre klassificering än class
+    endast en enhet kan ha ett id. om man vill att flera enheter 
+    ska gå under samma namn så ska man välja class-->
+        <div class="container">
+            <h1>My website</h1>
+        </div>
+    </header>
 
-    
+    <nav id="navbar">     
+        <div class="container">
+            <ul>
+                <li><a href="home.html">Home</a></li>
+                <li><a href="#">About</a></li>
+                <li><a href="#">Services</a></li>
+                <li><a href="#">Contact</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <section id="showcase">
+        <div class="container">
+            <h1>"Lorem, ipsum dolor sit amet consectetur adipisicing elit."</h1>
+        </div>
+    </section>
+
+<div class="container">
+<section id="main">
+    <h1>Welcome</h1>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.
+         Adipisci rerum quasi aspernatur at eligendi et cupiditate
+        nam, harum molestias? Aliquam in voluptatibus ut corrupti 
+        totam officia ducimus aspernatur sunt facilis?</p>
+</section>
+<aside id="sidebar">
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.
+        Adipisci rerum quasi aspernatur at eligendi et cupiditate
+       nam, harum molestias? Aliquam in voluptatibus ut corrupti 
+       totam officia ducimus aspernatur sunt facilis?</p>
+</aside>
+</div>
+
+<footer id="main-footer">
+    <p>Copyright &copy; 2023 My Website</p>
+</footer>
+
 </body>
 </html>
