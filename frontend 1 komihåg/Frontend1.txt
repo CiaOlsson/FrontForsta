@@ -1,0 +1,1 @@
+kom ihåg att man ska skriva utropstecken och enter för att få upp grundläggande html strukturen i index.html textfilen i visual studio code. 
